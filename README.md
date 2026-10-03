@@ -32,8 +32,8 @@ Find the eigenvalues of the rotation matrix. Every single one has |λ| = 1. Eige
 
 | Topic | File | Author | What it covers |
 |-------|------|--------|----------------|
-| 1 | `orthogonality.py` | [Name] | Matrix representation, orthogonality check, rotation vs scaling |
-| 2 | `rank_basis.py` | [Name] | Row reduction, rank, basis, null space |
+| 1 | `orthogonality.py` | namratha m | Matrix representation, orthogonality check, rotation vs scaling |
+| 2 | `rank_basis.py` | namratha m | Row reduction, rank, basis, null space |
 | 3 | `projections_least_squares.py` | Raakshit SK | Orthogonal projection onto a plane, least squares fit |
 | 4 | `eigen_rotation.py` | [Name] | Eigenvalue analysis of rotation matrices |
 
