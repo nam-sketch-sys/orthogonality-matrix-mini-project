@@ -36,7 +36,7 @@ Find the eigenvalues of the rotation matrix. Every single one has |λ| = 1. Eige
 | 2 | `rank_basis.py` | namratha m | Row reduction, rank, basis, null space |
 | 3 | `projections_least_squares.py` | Raakshit SK | Orthogonal projection onto a plane, least squares fit |
 | 4 | `eigen_rotation.py` | priyamvada| Eigenvalue analysis of rotation matrices |
-
+| 5 | `gram_schmidt.py` | Rida Anjum| Gram-Schmidt orthogonalization, building an orthonormal matrix Q (QᵀQ = I) |
 ---
 
 ## How to run
@@ -61,6 +61,19 @@ P = A (AᵀA)⁻¹ Aᵀ
 
 - Used as a **projection matrix** → flattens 3D points onto a plane (the screen)
 - Used in **least squares** → finds the best-fit line through data points
+---
+
+## Gram-Schmidt orthogonalization
+
+Takes linearly independent vectors v₁, v₂, ..., vₙ and builds an **orthonormal set** e₁, e₂, ..., eₙ (perpendicular, each of length 1).
+
+- u₁ = v₁
+- u_k = v_k − Σ proj(v_k onto u_j), for j < k
+- e_k = u_k / ‖u_k‖
+
+Putting e₁, ..., eₙ as columns gives **Q**, an orthogonal matrix: QᵀQ = I and Q⁻¹ = Qᵀ. Because Q preserves lengths and angles, it behaves like a rotation or reflection in 3D graphics.
+
+Run `python gram_schmidt.py` to see each step on a 3D example.
 
 ---
 
